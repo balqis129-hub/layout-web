@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header{
+            background: url(pantai\ \(1\).jpg);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+        }
+        header::before{
+            content: "";
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+        header h1{
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        nav{
+            background-color: deepskyblue;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+        .jumbotron{
+            width: 100%;
+            padding: 80px 100px;
+            box-sizing: border-box;
+            color: white;
+            background-color: rgb(232, 236, 241);
+            background-image: url(sea.jpg);
+            background-size: cover;
+        } 
+        .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .content{
+            background-color: white;
+            min-height: 25px;
+            overflow: auto;
+            text-align: center;
+            color: black;
+        }
+        .content h2{
+            padding: 25px;
+        }
+        .menu{
+            list-style-type: none;
+            display: flex;
+        }
+        .menu li {
+            margin: 0 1rem;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .menu li a:hover{
+            color: hsl(0, 86%, 27%);
+        }
+        .main{
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+        .destinasi {
+            margin: 20px;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+        }
+        .destinasi h2{
+            font-size: 24px;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .destinasi-item{
+            background-color: white;
+            margin: 3px;
+            max-width: 300px;
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1;
+            text-align: center;
+        }
+        .destinasi-item img{
+           max-width: 100%;
+           height: auto;
+           border-radius: 5px;
+        }
+        .destinasi-item h3{
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            text-align: left;
+        }
+        .destinasi-item p{
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            text-align: left;
+        }
+        .destinasi-item button{
+            padding: 0.5rem 1rem;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .destinasi-item button:hover{
+            border: 1px solid blue;
+            border-radius: 15px;
+            color: blue;
+        }
+        .footer{
+            text-align: center;
+            background-color: deepskyblue;
+            color: white;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jelajah Nusantara</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">Attractions & Tours</a>
+
+            </div>
+            <ul class="menu">
+                <li><a href="">Beranda</a></li>
+                <li><a href="">Hotel</a></li>
+                <li><a href="">Trains</a></li>
+                <li><a href="">Carsrental</a></li>
+                <li><a href="">Destinations</a></li>
+                <li><a href="">Attractions&Tours</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h2><b>Attractions & Tours Nusantara</b></h2>
+        <p>Kenapa Memilih yang biasa, jika Anda bisa mendapatkan yang luar biasa? Pilih tour dan Atraksi terbaik yang akan membawa anda ke tempat tempat paling ikonik dengan kenyamanan dan kemudahan Maksiamal</p>
+    </div>
+    <section class="destinasi">
+        <h2>Atraksi Populer</h2>
+        <div class="destinasi-item">
+            <img src="Waterbom Bali.jpg" alt="tes">
+            <h3>1. Waterbom bali</h3>
+            <p>Taman air dengan bar Kolam renang, Kolam arus, dan beragam wahana. Termasuk sistem pembayarantanpa uang tunai dan pencari reaksi dan penggemar sensasi.</p>
+            <button>Detail -></button>
+        </div>
+        <div class="destinasi-item">
+            <img src="borobudur-temple.jpg" alt="tes">
+            <h3>2. Borobudur Jawa Tengah</h3>
+            <p>Candi yang di bangun pada abad ke-8 dan ke-9 ini terletak di jawa tengah. Dalam tiga Tingkat, dasar berbentuk persegi dengan lima konsetris.</p>
+            <button>Detail -></button>
+        </div>
+        <div class="destinasi-item">
+            <img src="tanah lot bali.jpg" alt="tes">
+            <h3>3. Tanah Lot Bali</h3>
+            <p>Bangunan penting di Bali, terkenal karena keunikannya di lepas pantai dan latar belakang matahari terbenam. Kuil kuno yang bertengger di atas batu di tengah-tengah reruntuhan</p>
+            <button>Detail -></button>
+        </div>
+        <div class="destinasi-item">
+            <img src="uluwatu bali.jpg" alt="tes">
+            <h3>4. Uluwatu bali</h3>
+            <p>salah satu dari enam pura utama yang diyakini sebagai pilar spiritual Bali, bertengger di atas tebing terjal 70 meter di atas permukaan laut. Juga memiliki latar belakang matahari terbenam yang indah.</p>
+            <button>Detail -></button>
+        </div>
+        </div>
+    </section>
+    <section class="destinasi">
+        <h2>Tours Populer</h2>
+        <div class="destinasi-item">
+            <img src="Bromo.jpg" alt="tour1">
+            <h3>1. Bromo Jawa Timur</h3>
+            <p>Jelajahi Keindahan Surga Jawa Timur yang sempurna dengan Agen perjalanan Terbaik Dan Terpercaya.</p>
+            <button>Detail -></button>
+        </div>
+        <div class="destinasi-item">
+            <img src="Ubud private.jpg" alt="tour2">
+            <h3>2. Ubud Bali</h3>
+            <p>Kunjungi ubud pertamakalinya, dapatkan petunjuk arah dengan tur priadi yang menyesuaikan.</p>
+            <button>Detail -></button>
+        </div>
+        <div class="destinasi-item">
+            <img src="Nusa Penida.jpg" alt="tour1">
+            <h3>3. Nusa Penida Bali</h3>
+            <p>Tempat Recomendted bagi yang datang ke bali, bagus untuk foto dan juga cocok untuk foto prawedding.</p>
+            <button>Detail -></button>
+        </div>
+        <div class="destinasi-item">
+            <img src="bali secret waterfall.jpg" alt="tour1">
+            <h3>4. Air Terjun Bali</h3>
+            <p>Air terjun Rahasia yang membuat anda benar benar terkagum. Keajaiban air terjun yang mengalir indah.</p>
+            <button>Detail -></button>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <p>&copy;Copy Right 2024 Jelajah Nusantara</p>
+    </div>
+</body>
+</html>
